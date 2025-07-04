@@ -4,6 +4,8 @@ const server = http.createServer(
     (request: http.IncomingMessage, response: http.ServerResponse) => {}
 );
 
-server.listen(process.env.PORT, () => {
-    console.log("Servidor iniciado na porta 3333")
+const port = process.env.PORT;
+
+server.listen(port, () => {
+    console.log(`Servidor iniciado na porta ${port}`);
 })
