@@ -43,3 +43,11 @@ Este projeto visa facilitar o acesso e a organização de episódios de podcasts
     "categories": ["esporte", "corrida"]
   }
 ]
+
+
+## 🤝 contribuições  
+ideias e sugestões são super bem-vindas! 🌷
+
+## ⚠️ aviso  
+este projeto é apenas para fins educacionais e de entretenimento.
+
