@@ -43,11 +43,10 @@ Este projeto visa facilitar o acesso e a organização de episódios de podcasts
     "categories": ["esporte", "corrida"]
   }
 ]
+```
 
+## 🤝 Contribuições  
+Ideias e sugestões são super bem-vindas! 🌷
 
-## 🤝 contribuições  
-ideias e sugestões são super bem-vindas! 🌷
-
-## ⚠️ aviso  
-este projeto é apenas para fins educacionais e de entretenimento.
-
+## ⚠️ Aviso  
+Este projeto é apenas para fins educacionais e de entretenimento. Trata-se de um desafio proposto no Bootcamp Meu Tudo Mobile Developer da DIO, idealizado por Felipe Silva Aguiar.
