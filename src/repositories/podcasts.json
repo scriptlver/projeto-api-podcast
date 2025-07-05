@@ -1,4 +1,5 @@
-[{
+[
+  {
     "podcastName": "flow",
     "episode": "CBUM – Flow #319",
     "videoId": "pQSuQmUfS30",
@@ -21,6 +22,11 @@
     "episode": "FELIPE NETO – Flow #278",
     "videoId": "vJ-LrIjBWXg",
     "categories": ["internet", "opinião", "influenciador"]
+  },
+  {
+    "podcastName": "inteligência ltda",
+    "episode": "MONARK – Inteligência Ltda. #512",
+    "videoId": "xYzA123bCde",
+    "categories": ["polêmica", "liberdade de expressão", "entrevista"]
   }
 ]
-    
