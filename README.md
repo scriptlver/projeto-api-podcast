@@ -1,21 +1,36 @@
-# 🎧💗 Podcast Manager 💗
+# 🎧 Podcast Manager 💗
 
-## 📌💗 Sobre o Projeto
+![banner](https://i.imgur.com/qLxHp5U.png) <!-- Substitua por um banner personalizado do projeto -->
 
-O **Podcast Manager** é uma aplicação inspirada no layout da Netflix, projetada para reunir e organizar episódios de podcasts em formato de vídeo. O objetivo é oferecer uma navegação simples, prática e visualmente atrativa, permitindo que os usuários encontrem rapidamente conteúdos de seu interesse.
+## ✨ Sobre o Projeto
 
-## ✨💗 Funcionalidades
+O **Podcast Manager** é uma aplicação web inspirada na estética da Netflix, feita para organizar e centralizar episódios de **podcasts em vídeo**.  
+Com uma interface moderna e simples, o projeto facilita o acesso a conteúdos variados através de categorias e filtros personalizados.
 
-- **Exploração por Categorias:** Os episódios são organizados em sessões temáticas como saúde, bodybuilder, mentalidade e humor, facilitando a descoberta de novos conteúdos.
-- **Filtro por Nome do Podcast:** É possível buscar episódios específicos utilizando o nome do podcast como critério.
+---
 
-## 🚀💗 Endpoints Disponíveis
+## 💫 Funcionalidades
 
-### 🔹 Listar episódios por categoria
+- 🎙️ **Listagem por Categorias**  
+  Os episódios são agrupados em temas como:
+  - `saúde`
+  - `esporte`
+  - `bodybuilder`
+  - `mentalidade`
+  - `humor`
 
-- **Rota:** `GET /list`  
-- **Descrição:** Retorna todos os episódios agrupados por categorias.  
-- **Exemplo de resposta:**
+- 🔍 **Filtro por Nome do Podcast**  
+  Pesquise episódios rapidamente usando o nome do podcast (ex: `flow`, `podpah`, `inteligência ltda` etc).
+
+---
+
+## 🚀 Endpoints da API
+
+### 🔹 `GET /list` — Listar episódios por categoria
+
+- **Descrição:** Retorna todos os episódios, organizados por suas respectivas categorias.
+
+#### 🧾 Exemplo de resposta:
 
 ```json
 [
@@ -36,3 +51,17 @@ O **Podcast Manager** é uma aplicação inspirada no layout da Netflix, projeta
     "categories": ["esporte", "corrida"]
   }
 ]
+### 🔹 Filtrar episódios por nome de podcast
+
+- **Endpoint:** `GET /episode?podcastName={nome}`
+- **Descrição:** Retorna uma lista de episódios de podcast com base no nome do podcast fornecido.
+- **Exemplo de requisição:**
+
+```http
+GET /episode?podcastName=flow
+
+📦 TypeScript      - Linguagem de programação utilizada no projeto
+⚙️ Tsup            - Ferramenta de build e empacotamento
+⚡ Tsx             - Executor/compilador de projetos TypeScript
+🌐 Node.js         - Ambiente de execução do JavaScript no servidor
+📁 @types/node     - Tipagens auxiliares para Node.js em TypeScript
