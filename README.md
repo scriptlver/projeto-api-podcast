@@ -1,10 +1,8 @@
 # 🎧 Podcast Manager 💗
 
-![banner](https://i.imgur.com/qLxHp5U.png) <!-- Você pode trocar esse link por um banner personalizado do seu projeto -->
-
 ## ✨ Sobre o Projeto
 
-O **Podcast Manager** é uma aplicação inspirada no visual da Netflix, criada para centralizar e organizar episódios de podcasts em vídeo. A ideia é oferecer uma experiência de navegação simples, bonita e eficiente para quem gosta de acompanhar diferentes conteúdos de áudio e vídeo. 💡
+O **Podcast Manager** é uma aplicação inspirada no visual da Netflix, criada para centralizar e organizar episódios de podcasts em vídeo. A ideia é oferecer uma experiência de navegação simples, bonita e eficiente para quem gosta de acompanhar diferentes conteúdos de áudio e vídeo.
 
 ## 💫 Funcionalidades
 
@@ -38,11 +36,17 @@ O **Podcast Manager** é uma aplicação inspirada no visual da Netflix, criada 
     "categories": ["esporte", "corrida"]
   }
 ]
-### ✨ GET /episode?podcastName={nome} — Buscar por nome
+```
+### ✨ `GET /list` — Buscar por nome
 
 - **Descrição:** Filtra episódios de podcast a partir do nome fornecido.
 
 Exemplo:
 GET /episode?podcastName=flow
+
+
+
+
+
 
 
