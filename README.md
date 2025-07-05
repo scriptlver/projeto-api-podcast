@@ -1,21 +1,28 @@
 # 🎧 Podcast Manager 💗
 
-## ✨ Sobre o Projeto
+## ✨ Descrição
 
-O **Podcast Manager** é uma aplicação inspirada no visual da Netflix, criada para centralizar e organizar episódios de podcasts em vídeo. A ideia é oferecer uma experiência de navegação simples, bonita e eficiente para quem gosta de acompanhar diferentes conteúdos de áudio e vídeo.
+O **Podcast Manager** é uma aplicação inspirada no estilo da **Netflix**, que permite centralizar diferentes episódios de podcasts separados por categoria.  
+Este projeto visa facilitar o acesso e a organização de episódios de podcasts em formato de vídeo, proporcionando uma experiência de navegação intuitiva e agradável para os usuários.
 
-## 💫 Funcionalidades
 
-- 🎙️ **Organização por Categorias:** Os episódios são agrupados em temas como saúde, bodybuilder, mentalidade, humor, entre outros.
-- 🔍 **Filtro por Nome do Podcast:** Permite ao usuário pesquisar episódios com base no nome do podcast desejado.
+## ⚙️ Funcionalidades
 
-## 🚀 Endpoints Disponíveis
+- **Listar os episódios de podcasts em sessões de categorias**  
+  Os episódios são organizados em categorias como saúde, bodybuilder, mentalidade e humor, permitindo aos usuários explorar facilmente os conteúdos disponíveis.
 
-### 🔹 `GET /list` — Listar episódios por categoria
+- **Filtrar episódios por nome de podcast**  
+  Os usuários podem realizar buscas específicas por nome de podcast, facilitando o acesso aos episódios desejados.
 
-- **Descrição:** Retorna uma lista com todos os episódios disponíveis, agrupados por categorias.
 
-#### 🧾 Exemplo de resposta:
+## 🚀 Implementação
+
+### 📂 Listar os episódios de podcasts em sessões de categorias
+
+- **Endpoint:** `GET /list`  
+- **Descrição:** Retorna uma lista de episódios de podcasts organizados por categorias.
+
+**Exemplo de resposta:**
 
 ```json
 [
@@ -36,12 +43,3 @@ O **Podcast Manager** é uma aplicação inspirada no visual da Netflix, criada 
     "categories": ["esporte", "corrida"]
   }
 ]
-```
-### ✨ `GET /list` — Buscar por nome
-
-- **Descrição:** Filtra episódios de podcast a partir do nome fornecido.
-
-Exemplo:
-GET /episode?podcastName=flow
-
-
