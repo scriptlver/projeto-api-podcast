@@ -1,11 +1,10 @@
 export enum StatusCode {
-  // Informacional
   Continue = 100,
   SwitchingProtocols = 101,
   Processing = 102,
   EarlyHints = 103,
 
-  // Sucesso
+
   OK = 200,
   Created = 201,
   Accepted = 202,
@@ -17,7 +16,6 @@ export enum StatusCode {
   AlreadyReported = 208,
   IMUsed = 226,
 
-  // Redirecionamento
   MultipleChoices = 300,
   MovedPermanently = 301,
   Found = 302,
@@ -27,7 +25,6 @@ export enum StatusCode {
   TemporaryRedirect = 307,
   PermanentRedirect = 308,
 
-  // Erro do Cliente
   BadRequest = 400,
   Unauthorized = 401,
   PaymentRequired = 402,
@@ -57,7 +54,6 @@ export enum StatusCode {
   RequestHeaderFieldsTooLarge = 431,
   UnavailableForLegalReasons = 451,
 
-  // Erro do Servidor
   InternalServerError = 500,
   NotImplemented = 501,
   BadGateway = 502,
