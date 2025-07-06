@@ -1,38 +1,10 @@
-import * as http from 'http';
+import * as http from "http";
+import { app } from "./app";
 
-import { getFilterEpisodes, getListEpisodes } from './controllers/podscasts-controller.js';
-import { Routes } from './routes/routes.js';
-import { HttpMethods } from './utils/htttp-methods.js';
-
-
-
-
-const server = http.createServer(
-    async (request: http.IncomingMessage, response: http.ServerResponse) => {
-
-        //querystring
-        const [baseUrl, queryString] = request.url?.split('?') ?? ['', ''];
-
-        if(request.method === HttpMethods.GET && baseUrl === Routes.LIST) {
-            await getListEpisodes(request, response);
-        }
-
-        if(request.method === HttpMethods.GET && baseUrl === Routes.EPISODE) {
-            await getFilterEpisodes(request, response);
-        }
-    }
-
-
-
-
-
-
-);
-
-
+const server = http.createServer(app);
 
 const port = process.env.PORT;
 
 server.listen(port, () => {
-    console.log(`Servidor iniciado na porta ${port}`);
-})
+  console.log(`servidor iniciado na porta ${port}`);
+});
